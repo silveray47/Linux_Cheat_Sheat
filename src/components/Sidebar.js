@@ -1,122 +1,103 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FolderCopyIcon from '@mui/icons-material/FolderCopy';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import DownloadIcon from '@mui/icons-material/Download';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
+import TextFieldsIcon from '@mui/icons-material/TextFields';
+import CodeIcon from '@mui/icons-material/Code';
+import HistoryIcon from '@mui/icons-material/History';
+import CompressIcon from '@mui/icons-material/Compress';
+import GroupIcon from '@mui/icons-material/Group';
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
+import { FaSkull } from 'react-icons/fa';
+import CellTowerIcon from '@mui/icons-material/CellTower';
+import HomeIcon from '@mui/icons-material/Home';
 
 const Sidebar = () => {
   return (
     <div className="left-side">
       <div className="side-wrapper">
-        <div className="side-title">Categories</div>
         <div className="side-menu">
+        <div className="side-title">Home</div>
+            <Link to="/">
+              <HomeIcon/>
+              <span>Welcome</span>
+            </Link>
+        <div className="side-title">Categories</div>
           <Link to="/BasicCLI">
-            <svg viewBox="0 0 488.455 488.455" fill="currentColor">
-              <path
-                d="M287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0" />
-              <path
-                d="M427.397 91.581H385.21l-30.544-61.059H133.76l-30.515 61.089-42.127.075C27.533 91.746.193 119.115.164 152.715L0 396.86c0 33.675 27.384 61.074 61.059 61.074h366.338c33.675 0 61.059-27.384 61.059-61.059V152.639c-.001-33.674-27.385-61.058-61.059-61.058zM244.22 381.61c-67.335 0-122.118-54.783-122.118-122.118s54.783-122.118 122.118-122.118 122.118 54.783 122.118 122.118S311.555 381.61 244.22 381.61z" />
-            </svg>
-            Navigation and List
+            <TerminalIcon/>
+            <span>Navigation and List</span>
           </Link>
           <Link to="/FilesAndFolders">
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <circle cx="295.099" cy="327.254" r="110.96" transform="rotate(-45 295.062 327.332)" />
-              <path
-                d="M471.854 338.281V163.146H296.72v41.169a123.1 123.1 0 01121.339 122.939c0 3.717-.176 7.393-.5 11.027zM172.14 327.254a123.16 123.16 0 01100.59-120.915L195.082 73.786 40.146 338.281H172.64c-.325-3.634-.5-7.31-.5-11.027z" />
-            </svg>
-            Files and Folders
+            <FolderCopyIcon/>
+            <span>Files and Folders</span>
           </Link>
           <Link to="/Nano">
-            <svg viewBox="0 0 58 58" fill="currentColor">
-              <path
-                d="M57 6H1a1 1 0 00-1 1v44a1 1 0 001 1h56a1 1 0 001-1V7a1 1 0 00-1-1zM10 50H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2V8h8v9zm26.537 12.844l-11 7a1.007 1.007 0 01-1.018.033A1.001 1.001 0 0124 36V22a1.001 1.001 0 011.538-.844l11 7a1.003 1.003 0 01-.001 1.688zM56 50h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8V8h8v9z" />
-            </svg>
-            Nano
+            <BorderColorIcon/>
+            <span>Nano</span>
           </Link>
           <Link to="/Streams">
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M499.377 46.402c-8.014-8.006-18.662-12.485-29.985-12.613a41.13 41.13 0 00-.496-.003c-11.142 0-21.698 4.229-29.771 11.945L198.872 275.458c25.716 6.555 47.683 23.057 62.044 47.196a113.544 113.544 0 0110.453 23.179L500.06 106.661C507.759 98.604 512 88.031 512 76.89c0-11.507-4.478-22.33-12.623-30.488zM176.588 302.344a86.035 86.035 0 00-3.626-.076c-20.273 0-40.381 7.05-56.784 18.851-19.772 14.225-27.656 34.656-42.174 53.27C55.8 397.728 27.795 409.14 0 416.923c16.187 42.781 76.32 60.297 115.752 61.24 1.416.034 2.839.051 4.273.051 44.646 0 97.233-16.594 118.755-60.522 23.628-48.224-5.496-112.975-62.192-115.348z" />
-            </svg>
-            Streams and<br></br> concatenation
+            <CodeIcon/>
+            <span>Streams and<br></br> concatenation</span>
           </Link>
           <Link to="/Compression">
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M497 151H316c-8.401 0-15 6.599-15 15v300c0 8.401 6.599 15 15 15h181c8.401 0 15-6.599 15-15V166c0-8.401-6.599-15-15-15zm-76 270h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15zm0-180h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15z" />
-              <path
-                d="M15 331h196v60h-75c-8.291 0-15 6.709-15 15s6.709 15 15 15h135v-30h-30v-60h30V166c0-24.814 20.186-45 45-45h135V46c0-8.284-6.716-15-15-15H15C6.716 31 0 37.716 0 46v270c0 8.284 6.716 15 15 15z" />
-            </svg>
-            Compression
+            <CompressIcon/>
+            <span>Compression</span>
           </Link>
           <Link to="/Echo">
             <svg viewBox="0 0 512 512" fill="currentColor">
               <path
                 d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
             </svg>
-            echo 
+            <span>Echo</span> 
           </Link>
           <Link to="/History">
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            History 
+            <HistoryIcon/>
+            <span>History</span> 
           </Link>
           <Link to="/UsersAndGroups">
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            Users and Groups 
+            <GroupIcon/>
+            <span>Users and Groups</span> 
           </Link>
           <Link to="/Permissions">
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            Permissions 
+            <VpnKeyIcon/>
+            <span>Permissions</span> 
           </Link>
           <Link to='/TextProcessing'>
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            Text Processing 
+            <TextFieldsIcon/>
+            <span>Text Processing</span> 
           </Link>
           <Link to='/Regex'>
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
+            <svg width="20" height="20"  viewBox =" 0 0 20 20 " fill="currentColor">
+              <path d="M1.62 10a13.63 13.63 0 0 0 .45 3.51A13.39 13.39 0 0 0 3.4 16.7a.91.91 0 0 1 .1.27.41.41 0 0 1 0 .21.38.38 0 0 1-.1.15l-.14.11-.83.5a14.89 14.89 0 0 1-1.11-2 13.62 13.62 0 0 1-.74-2 13.22 13.22 0 0 1-.42-2 16.4 16.4 0 0 1 0-4.14 13.22 13.22 0 0 1 .42-2 13.84 13.84 0 0 1 .74-2A14.94 14.94 0 0 1 2.4 2l.83.51.14.11a.4.4 0 0 1 .1.15.41.41 0 0 1 0 .21.93.93 0 0 1-.1.27A13.6 13.6 0 0 0 1.62 10zM5 13.51a1.53 1.53 0 0 1 .11-.59 1.5 1.5 0 0 1 .31-.48 1.5 1.5 0 0 1 1.65-.32 1.51 1.51 0 0 1 .8.8 1.47 1.47 0 0 1 .12.59 1.46 1.46 0 0 1-.12.59 1.56 1.56 0 0 1-.32.48 1.46 1.46 0 0 1-.48.32 1.57 1.57 0 0 1-1.18 0 1.4 1.4 0 0 1-.47-.32A1.5 1.5 0 0 1 5 13.51zm10.8-4.72-.54.94-1.75-1-.34-.23a1.38 1.38 0 0 1-.27-.26A1.84 1.84 0 0 1 13 9v2h-1V9a2.16 2.16 0 0 1 .12-.76 1.82 1.82 0 0 1-.58.48l-1.74 1-.54-.94 1.73-1a2.25 2.25 0 0 1 .75-.29 1.77 1.77 0 0 1-.75-.28L9.2 6.2l.54-.94 1.75 1 .33.24a1.64 1.64 0 0 1 .27.27A2 2 0 0 1 12 6V4h1v2a2.93 2.93 0 0 1 0 .4 1.36 1.36 0 0 1-.1.36 2.24 2.24 0 0 1 .59-.49l1.74-1 .54.94-1.73 1-.36.18a1.29 1.29 0 0 1-.36.1 2.11 2.11 0 0 1 .36.1 2 2 0 0 1 .36.19zM18.37 10a13.65 13.65 0 0 0-.45-3.51 13.81 13.81 0 0 0-1.32-3.27.93.93 0 0 1-.1-.27.45.45 0 0 1 0-.21.36.36 0 0 1 .1-.15l.14-.11.86-.48a15.54 15.54 0 0 1 1.1 2 13.79 13.79 0 0 1 .74 2 13.18 13.18 0 0 1 .42 2 16.16 16.16 0 0 1 .14 2 16.21 16.21 0 0 1-.13 2 13.18 13.18 0 0 1-.42 2 13.57 13.57 0 0 1-.74 2 15.49 15.49 0 0 1-1.1 2l-.84-.5-.14-.11a.35.35 0 0 1-.1-.15.44.44 0 0 1 0-.21.91.91 0 0 1 .1-.27 13.62 13.62 0 0 0 1.31-3.23 13.69 13.69 0 0 0 .43-3.53z"/>
             </svg>
-            Regex 
+            <span>Regex</span> 
           </Link>
           <Link to='/Package'>
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            Package Management 
+            <InventoryIcon/>
+            <span>Package Management</span> 
           </Link>
           <Link to='/ProcessesAndSystemctl'>
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            Processes and Systemctl 
+            <SettingsSuggestIcon/>
+            <span>Processes and Systemctl </span>
           </Link>
           <Link to='/Kill'>
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            Kill commend 
+            <FaSkull/>
+            <span>Kill commend</span> 
           </Link>
           <Link to='/Networking'>
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path
-                d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z" />
-            </svg>
-            Networking 
+            <CellTowerIcon/>
+            <span>Networking</span> 
           </Link>
+          <div className="side-title">Download</div>
+          <Link to="/files/Linux - Cheat Sheet.pdf" target="_blank" download>
+            <DownloadIcon/>
+            <span>Cheat Sheet</span>
+          </Link>
+
         </div>
       </div>
     </div>

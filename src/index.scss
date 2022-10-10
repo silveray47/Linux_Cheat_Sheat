@@ -252,27 +252,44 @@ img {
 .left-side {
   flex-basis: 240px;
   border-right: 1px solid var(--border-color);
-  padding: 26px;
+  padding: 20px;
   flex-shrink: 0;
   overflow: auto;
   @media screen and (max-width: 945px) {
-    display: none;
+    width:40px;
+    flex-basis: 80px;
+
   }
+  span{
+    @media screen and (max-width: 945px) {
+      display: none;
+    }
+  }
+ 
 }
 
-.side-wrapper + .side-wrapper {
+.side-wrapper {
   margin-top: 20px;
+  @media screen and (max-width: 945px) {
+    margin: 0%;
+    width: 30px;
+  }
 }
 
 .side-title {
   color: var(--inactive-color);
-  margin-bottom: 14px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  @media screen and (max-width: 945px) {
+    display: none;
+  }
 }
 
 .side-menu {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
+  margin: 0%;
   a {
     text-decoration: none;
     color: var(--theme-color);
@@ -287,10 +304,16 @@ img {
       background-color: var(--hover-menu-bg);
     }
   }
+  
   svg {
     width: 16px;
     margin-right: 8px;
   }
+
+  @media screen and (max-width: 945px) {
+      width: min-content;
+      margin: 0px;
+    }
 }
 
 .updates {
@@ -330,9 +353,9 @@ img {
   text-decoration: none;
   color: var(--theme-color);
   padding: 0 30px;
-  @media screen and (max-width: 1055px) {
-    display: none;
-  }
+  // @media screen and (max-width: 1055px) {
+  //   display: none;
+  // }
 }
 
 .content-wrapper {
@@ -344,6 +367,7 @@ img {
   width: 100%;
   overflow: auto;
   background-color: var(--theme-bg-color);
+  
   @media screen and (max-width: 510px) {
     padding: 20px;
   }
