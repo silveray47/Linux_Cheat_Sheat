@@ -4,7 +4,7 @@ import ContentSectionList from '../components/ContentSectionList'
 const basicCLI = () => {
   return (
     <div className="content-section">
-      <div className="content-section-title">Installed</div>
+      <div className="content-section-title">basicCLI</div>
       <ContentSectionList/>
     </div>
   )

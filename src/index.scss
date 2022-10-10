@@ -12,7 +12,7 @@
   --inactive-color: rgb(113 119 144 / 78%);
   --body-font: 'Poppins', sans-serif;
   --hover-menu-bg: rgba(12 15 25 / 30%);
-  --content-title-color: #999ba5;
+  --content-title-color: #babbc2;
   --content-bg: rgb(146 151 179 / 13%);
   --button-inactive: rgb(249 250 251 / 55%);
   --dropdown-bg: #21242d;
@@ -20,7 +20,7 @@
   --popup-bg: rgb(22 25 37);
   --search-bg: #14162b;
   --overlay-bg: rgba(36, 39, 59, 0.3);
-  --scrollbar-bg: rgb(1 2 3 / 40%);
+  --scrollbar-bg: rgba(0, 0, 0, 0);
 }
 
 
@@ -791,4 +791,8 @@ img {
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-bg);
   border-radius: 10px;
+ 
+}
+.content-section-title{
+  font-size: 1.5rem;
 }
