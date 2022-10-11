@@ -15,6 +15,7 @@ import TextProcessing from './screens/TextProcessing'
 import UsersAndGroups from './screens/UsersAndGroups'
 import History from './screens/History'
 import Regex from './screens/Regex.js'
+import Searching from './screens/Searching'
 
 import { Route, Routes } from 'react-router-dom'
 import Welcome from "./screens/Welcome";
@@ -51,10 +52,12 @@ function App() {
             <Route path='/TextProcessing' element = {<TextProcessing/>}/>
             <Route path='/UsersAndGroups' element = {<UsersAndGroups/>}/>
             <Route path='/Regex' element = {<Regex/>}/>
+            <Route path='/Searching' element = {<Searching/>}/>
             <Route path='/*' element = {<Welcome/>}/>
           </Routes>
         </div>
       </div>
+
     </div>
   );
 }

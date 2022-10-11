@@ -1,33 +1,22 @@
 import React from 'react'
 
-function ContentSectionList() {
+function ContentSectionList({list}) {
     return (
         <ul>
-            <li className="adobe-product">
-                <div className="products command">
-                    Photoshop
-                </div>
-                <span className="description">
-                    Updated
-                </span>
-            </li>
-            <li className="adobe-product">
-                <div className="products command">
-                    Photoshop
-                </div>
-                <span className="description">
-                    Updated
-                </span>
-            </li>
-            <li className="adobe-product">
-                <div className="products command">
-                    Photoshop
-                </div>
-                <span className="description">
-                    Updated
-                </span>
-            </li>
-
+            {
+                list.map((line) => {
+                    return (
+                        <li key={line.command}>
+                            <div className="products command">
+                                {line.command}
+                            </div>
+                            <span className="description ">
+                                {line.text}
+                            </span>
+                        </li>
+                    )
+                })
+            }
         </ul>
     )
 }

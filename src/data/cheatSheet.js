@@ -61,7 +61,7 @@ const cheatSheet ={
             { command : 'CTRL-C', text: 'Show line number '},
             { command : 'CTRL-_', text: 'Go to line number'},
         ],
-        Files:[
+        Find:[
             { command : 'CTRL-W ', text: 'Find '},
             { command : 'ALT-W ', text: 'Find next '},
             { command : 'CTRL-\ ', text: 'Search and replace '},
@@ -123,15 +123,15 @@ const cheatSheet ={
             { command : 'rwx ', text: '7 '},
         ],
         Commands:[
-            { command : 'chmod u+x file1 ', text: ' '},
-            { command : 'chmod g-w file1 ', text: ' '},
-            { command : 'chmod o=r file1 ', text: ' '},
-            { command : 'chmod 777 file1 ', text: ' '},
-            { command : 'chmod 764 file1 ', text: ' '},
-            { command : 'chmod +t dir1 ', text: ' '},
-            { command : 'chmod u+s file1 ', text: ' '},
-            { command : 'chmod g+s dir1 ', text: ' '},
-            { command : 'chown user1:user1 file1 ', text: ' '},
+            { command : 'chmod u+x file1 ', text: 'Add the execution permission for the owner on file named file1 (or directory) '},
+            { command : 'chmod g-w file1 ', text: 'Remove the write permission for the group from file named file1 (or directory) '},
+            { command : 'chmod o=r file1 ', text: 'Set the permissions to read-only for the other on file named file1 (or directory) '},
+            { command : 'chmod 777 file1 ', text: 'Set full permissions for all on file named file1 (or directory) '},
+            { command : 'chmod 764 file1 ', text: 'Set full permissions for the owner, read and write for the group and read only for the others '},
+            { command : 'chmod +t dir1 ', text: 'Add the sticky bit permission on dir1 '},
+            { command : 'chmod u+s file1 ', text: 'Set the suid permission on file1 (not relevant for directories) '},
+            { command : 'chmod g+s dir1 ', text: 'Set the guid permission on dir1 '},
+            { command : 'chown user1:user1 file1 ', text: 'Change the user and/or group ownership of file1 to user1 and group user1 '},
         ],
         Special:[
             { command : 'user + s ', text: 'SUID: A file with SUID always executes as the user who owns the file, regardless of the user passing the command '},

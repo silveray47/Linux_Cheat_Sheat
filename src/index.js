@@ -8,5 +8,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <App />
+        <footer className='footer'>made by raymond31415</footer>
     </BrowserRouter>
 );
