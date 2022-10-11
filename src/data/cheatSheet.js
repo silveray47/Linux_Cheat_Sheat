@@ -64,7 +64,7 @@ const cheatSheet ={
         Find:[
             { command : 'CTRL-W ', text: 'Find '},
             { command : 'ALT-W ', text: 'Find next '},
-            { command : 'CTRL-\ ', text: 'Search and replace '},
+            { command : "CTRL-\\ ", text: 'Search and replace '},
         ]
     }, 
 
@@ -209,7 +209,7 @@ const cheatSheet ={
             { command : '[ ] ', text: ' Character set - one of the characters in the bracket'},
             { command : '[x-y] ', text: ' Character range - any character within the range from x to '},
             { command : '[^ab] ', text: 'negation - match any character except the set'},
-            { command : '\ ', text: ' Backslash used for escaping '},
+            { command : '\\ ', text: ' Backslash used for escaping '},
         ],
         Extended:[
             { command : '|', text: 'Alternation - OR operand '},
@@ -226,7 +226,7 @@ const cheatSheet ={
         { command : 'whereis -b', text: 'search only for binary  or executable files'},
         { command : 'whereis -m', text: 'search only for man pages '},
         { command : 'locate file', text: 'search for a file location'},
-        { command : 'locate -b "\pattern"', text: 'Match only the base name against the specified patterns'},
+        { command : 'locate -b "pattern"', text: 'Match only the base name against the specified patterns'},
         { command : 'find', text: 'powerful tool for searching for files and folders '},
         { command : 'find . -type f', text: 'Search only for files only, starting at current location.'},
         { command : 'find . -type d', text: 'Search only for directories, starting at the current location.'},
@@ -244,8 +244,8 @@ const cheatSheet ={
         { command : 'find . -type f -user admin', text: 'search for files and by owner username'},
         { command : 'find . -type f -perm 644 ', text: 'search for files and by permissions, in this case: rw-r--r-- '},
         { command : 'find . -type f -perm /o=w', text: 'search for files and by permissions, in this case write permission for owner '},
-        { command : 'find -print -exec file {} \;', text: 'search and run the file command on each of the matches '},
-        { command : 'find . \( excretion1 \) -or \( excretion2 \) ', text: 'Using or operator in fin command. '},
+        { command : 'find -print -exec file {} \\;', text: 'search and run the file command on each of the matches '},
+        { command : 'find . \\( excretion1 \\) -or \\( excretion2 \\) ', text: 'Using or operator in fin command. '},
     ],
     PackageManagement :{
         UpdateAndInstall:[
